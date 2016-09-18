@@ -1,0 +1,29 @@
+{
+  "name": "sample-graphql",
+  "version": "0.1.0",
+  "description": "GraphQL api for GDP",
+  "main": "index.js",
+  "scripts": {
+    "dev": "./node_modules/babel-cli/bin/babel-node.js src/index.js",
+    "clean": "rm -rf build && mkdir build",
+    "build": "npm run clean && ./node_modules/babel-cli/bin/babel.js src -d ./build",
+    "start": "node build/index.js"
+  },
+  "author": "Viet Le",
+  "license": "MIT",
+  "dependencies": {
+    "babel-runtime": "^6.11.6",
+    "bluebird": "^3.4.6",
+    "express": "^4.14.0",
+    "express-graphql": "^0.5.4",
+    "graphql": "^0.7.0",
+    "knex": "^0.12.1",
+    "sqlite3": "^3.1.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-plugin-transform-async-to-module-method": "^6.8.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.14.0"
+  }
+}
