@@ -2,7 +2,11 @@
   "name": "sample-graphql",
   "version": "0.1.0",
   "description": "GraphQL api for GDP",
-  "main": "index.js",
+  "main": "build/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lttviet/graphql-example"
+  },
   "scripts": {
     "dev": "./node_modules/babel-cli/bin/babel-node.js src/index.js",
     "clean": "rm -rf build && mkdir build",
